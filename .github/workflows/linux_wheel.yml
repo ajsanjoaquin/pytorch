@@ -41,4 +41,4 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: pytorch-wheel-py${{ matrix.python_version }}-${{ matrix.gpu_arch }}
-          path: /remote/*.whl
+          path: /remote/**/*.whl
